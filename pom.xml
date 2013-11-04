@@ -41,7 +41,7 @@
     <!-- Neo4j -->
     <dependency>
       <groupId>org.neo4j</groupId>
-      <artifactId>neo4j-backup</artifactId>
+      <artifactId>neo4j-enterprise</artifactId>
       <version>${neo4j.version}</version>
       <type>jar</type>
       <scope>compile</scope>
@@ -66,7 +66,7 @@
               <artifactItems>
                 <artifactItem>
                   <groupId>org.neo4j</groupId>
-                  <artifactId>neo4j-backup</artifactId>
+                  <artifactId>neo4j-enterprise</artifactId>
                   <outputDirectory>${project.build.directory}</outputDirectory>
                 </artifactItem>
               </artifactItems>
