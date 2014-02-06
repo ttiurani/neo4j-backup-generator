@@ -33,7 +33,7 @@
   </developers>
 
   <properties>
-    <neo4j.version>2.0.0-RC1</neo4j.version>
+    <neo4j.version>2.0.0</neo4j.version>
   </properties>
 
   <dependencies>
@@ -73,6 +73,17 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-clean-plugin</artifactId>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>${basedir}/lib</directory>
+            </fileset>
+          </filesets>
+        </configuration>
       </plugin>
     </plugins>
   </build>
